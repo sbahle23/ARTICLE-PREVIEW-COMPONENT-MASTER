@@ -132,4 +132,29 @@ body {
      transition: background-color 0.3s ease;
 }
 
+.share-btn.active{
+    background-color: var(--clr-primary-500);
+}
+
+.share-btn.active .share-icon{
+    filter: brightness(0) invert(1);  
+}
+
+/* Mobile tooltip is positioned absolutely for fade effect */
+.share-tooltip{
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+
+
 
