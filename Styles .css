@@ -170,6 +170,21 @@ body {
     visibility: visible;
 }
 
+.share-text{
+    color: var(--clr-primary-600);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 13px;
+}
+
+.share-links{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+
+
 
 
 
