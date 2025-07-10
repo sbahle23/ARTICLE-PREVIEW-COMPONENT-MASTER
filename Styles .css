@@ -231,6 +231,56 @@ body {
 }
 
 
+/* Destop tooltip (Pop-up) */
+.share-tooltip{
+    /* Reset mobile absolute positioning */
+    position: absolute;
+    top: auto;
+    left: 50%;
+    bottom: 75px;
+    padding: 18px 35px;
+    justify-content: center;
+
+    /* Hidden by default */
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: bottom center;
+
+    /* Transform and transition */
+    transform: translateX(-50%) scale(0.8) translateY(10px);
+    transition: opacity 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6),
+                transform 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6),
+                visibility 0.3s ease;
+
+    /* Appearence */
+    background-color: var(--clr-primary-400);
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10px;
+}
+
+/* Desktop active state - controlled by tooltip's own .active class */
+.share-tooltip.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) scale(1) translateY(0);
+}
+
+/* The triangle for desktop */
+.share-tooltip{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateY(-50%);
+    border-width: 12px;
+    border-style: solid;
+    border-color: var(--clr-primary-400) transparent transparent transparent;
+}
+
+
+
+
 }
 
 
