@@ -237,7 +237,7 @@ body {
     position: absolute;
     top: auto;
     left: 50%;
-    bottom: 75px;
+    bottom: 65px;
     padding: 18px 35px;
     justify-content: center;
 
@@ -267,12 +267,12 @@ body {
 }
 
 /* The triangle for desktop */
-.share-tooltip{
+.share-tooltip::before {
     content: '';
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translateX(-50%);
     border-width: 12px;
     border-style: solid;
     border-color: var(--clr-primary-400) transparent transparent transparent;
