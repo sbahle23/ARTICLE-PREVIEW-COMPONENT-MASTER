@@ -14,5 +14,12 @@ shareButton.addEventListener('click', (event) =>{
     tooltip.classList.toogle('active');
 });
 
-// Optional: close the tooltip
+// Optional: close the tooltip if clicking anywhere else on the page
+document.addEventListener("click", function() {
+    if(articleFooter.classList.contains('active')){
+        articleFooter.classList.remove('active');
+        shareButton.classList.remove('active');
+        tooltip.classList.remove('active');
+    }
+});
 
