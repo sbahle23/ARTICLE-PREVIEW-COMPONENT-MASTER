@@ -154,6 +154,17 @@ body {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
+/* This is the cleaned up rule for your icon sizing */
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* This is the new rule that makes your icon white so they are visible */
+.share-tooltip .share-icon {
+    filter: brightness(0) invert(1);
+}
+
 /* Mobile active state: footer transfomer */
 .article-footer.active{
     background-color: var(--clr-primary-400);
@@ -181,6 +192,12 @@ body {
     display: flex;
     gap: 16px;
     align-items: center;
+}
+
+.share-links a {
+    display: block;
+    height: 24px;
+    width: 24px;
 }
 
 /* ------------------- */
